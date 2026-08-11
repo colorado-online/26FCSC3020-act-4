@@ -1,7 +1,7 @@
 from flask import Flask, g
 import sqlite3
 
-def get_conn(): 
+def get_conn():  
     with app.app_context():
         if 'conn' not in g:
             g.conn = sqlite3.connect('students.db')
